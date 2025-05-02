@@ -9,12 +9,8 @@ export const CalculatorValidation = z.object({
   AportacionesAdicionales: z.number(),
 });
 
-
-
 export const ContactFormSchema = z.object({
-  Name: z.string().min(2).max(50),
-  Email: z.string().min(2).max(50),
-  Description: z.string().max(200),
-
-})
-
+  nombre: z.string().min(2).max(50),
+  correo: z.string().min(2).max(50),
+  descripcion: z.string().max(200),
+});

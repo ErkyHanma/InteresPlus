@@ -8,16 +8,16 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="w-screen  h-[75vh]">
-      <section className="h-full fade-in-text  w-full flex justify-center pt-20 px-4">
-        <div className="flex flex-col items-center text-center md:w-[800px]">
+    <main className="w-screen min-h-screen pt-16">
+      <section className="fade-in-text w-full h-[70vh] flex justify-center pt-20 px-4">
+        <div className="flex flex-col items-center text-center">
           <p
-            className={`text-4xl md:text-5xl xl:text-7xl duration-300 ${montserrat.className} font-bold `}
+            className={`text-4xl sm:text-5xl max-w-[700px] xl:text-7xl duration-300 ${montserrat.className} font-bold `}
           >
             Calcula y visualiza tus inversiones
           </p>
           <p
-            className={` text-gray-500 duration-300 text-base  md:text-lg md:w-[440px] xl:w-[600px]  xl:text-xl font-medium mt-6 md:mt-5  ${karla.className}`}
+            className={` text-gray-500 max-w-[450px]  duration-300 text-base  md:text-lg  xl:w-[600px]  xl:text-xl font-medium mt-6 md:mt-5  ${karla.className}`}
           >
             Tu herramienta definitiva para planificar y visualizar el
             crecimiento de tus inversiones.
@@ -33,15 +33,14 @@ export default function Home() {
       </section>
 
       <section
-        className={`font-semibold px-8 lg:pl-16 ${montserrat.className} h-[60vh] md:h-[70vh] -mt-72 md:-mt-24 mb-16 flex items-center justify-center`}
+        className={` px-8 lg:pl-16 my-32 hidden md:flex mb-16  items-center justify-center`}
       >
         <Image
           src={"/icon/undraw_small_town_re_7mcn.svg"}
           alt="icon"
-          width="0"
-          height="0"
-          sizes="100vw"
-          className="w-[1100px] h-auto"
+          width="1000"
+          height="1000"
+          className="w-full max-w-[1000px] h-auto"
         />
       </section>
 

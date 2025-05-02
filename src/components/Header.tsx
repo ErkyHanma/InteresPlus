@@ -19,7 +19,7 @@ const Header = () => {
         <div className="flex flex-col items-baseline gap-1">
           <Menu />
 
-          <div className="gap-0.5 lg:gap-2 hidden md:flex">
+          <div className="gap-0.5 lg:gap-2 hidden lg:flex">
             {headers_links.map((item) => (
               <Link
                 key={item.name}
@@ -44,7 +44,7 @@ const Header = () => {
 
       {isOpen && (
         <>
-          <div className="md:hidden animate-in translate-y-5 z-50  duration-700 flex-col  fixed w-full  mt-[50px]  py-8 bg-white px-6 gap-3 flex">
+          <div className="lg:hidden animate-in translate-y-5 z-50  duration-700 flex-col  fixed w-full  mt-[50px]  py-8 bg-white px-6 gap-3 flex">
             {headers_links.map((item) => (
               <Link
                 onClick={onClose}
@@ -58,7 +58,7 @@ const Header = () => {
           </div>
           <div
             onClick={onClose}
-            className="md:hidden fixed w-full h-full bgTransparent  z-20 "
+            className="lg:hidden fixed w-full h-full bgTransparent  z-20 "
           ></div>
         </>
       )}

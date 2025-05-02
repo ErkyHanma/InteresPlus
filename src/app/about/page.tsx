@@ -7,9 +7,9 @@ import Link from "next/link";
 
 const about = () => {
   return (
-    <div className="flex text-black flex-col">
+    <div className="flex text-black pt-14 flex-col">
       <section
-        className={`${montserrat.className} flex flex-col md:flex-row  gap-3 px-8 md:px-12 xl:px-36 justify-center h-[90vh] md:items-center`}
+        className={`${montserrat.className} pt-12 sm:pt-0  flex flex-col md:flex-row  gap-3 px-8 md:px-12 xl:px-36 justify-center min-h-screen md:items-center`}
       >
         <div className="flex flex-col w-full gap-6">
           <p className="font-bold text-3xl md:text-4xl lg:text-5xl w-full">

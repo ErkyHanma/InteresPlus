@@ -38,17 +38,11 @@ const Calculadora = () => {
   };
 
   return (
-    <div className="flex-col h-full  -mt-12 md:-mt-0">
-      <div
-        className={`${montserrat.className} flex justify-center font-bold px-2 text-2xl md:text-3xl lg::text-4xl mt-16`}
-      >
-        Calculadora de Intereses
-      </div>
-
-      <section className="flex md:flex-row flex-col mt-8">
-        <div className="flex px-8 xl:px-0 flex-1 flex-col gap-10 xl:flex-row xl:gap-4 xl:mx-20 xl:mt-8">
-          <div className="border pt-3 -mt-4 px-4 flex flex-col h-[550px] shadow-md rounded-md">
-            <div className="flex gap-2 justify-between mb-4  rounded-md mx- p-2">
+    <div className="flex-col min-h-screen pt-32 flex justify-center">
+      <section className="flex md:flex-row flex-col">
+        <div className="flex px-6 flex-col gap-10 xl:flex-row xl:gap-4 xl:mx-20 ">
+          <div className="border pt-3 -mt-4 px-4 flex flex-col h-[560px] shadow-md rounded-md">
+            <div className="flex gap-2 justify-between mb-4  rounded-md p-2">
               <button
                 className={clsx("font-semibold  p-2 flex-1  rounded-md", {
                   "bg-orange-500 text-white": interestType === "simple",

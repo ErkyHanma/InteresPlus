@@ -3,15 +3,11 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 
-
-
-
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "InteresPlus",
-  description: "Rate Calculator",
+  description: "Calculadora de Interes Simple & Compuesto",
 };
 
 export default function RootLayout({
@@ -24,10 +20,8 @@ export default function RootLayout({
       <body className={`${inter.className} h-screen w-screen`}>
         <Header />
 
-        <div className="h-[90%] pt-24 w-full">{children}</div>
+        <div className="w-full">{children}</div>
       </body>
-
-      
     </html>
   );
 }

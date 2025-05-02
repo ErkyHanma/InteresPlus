@@ -6,7 +6,7 @@ import Link from "next/link";
 const Info = () => {
   return (
     <div
-      className={`w-full -mt-24  flex flex-col items-center justify-center  ${montserrat.className}`}
+      className={`w-full   flex flex-col items-center justify-center  ${montserrat.className}`}
     >
       <Image
         src={"/fs-banner.jpg"}

@@ -16,7 +16,7 @@ const Menu = () => {
             width="0"
             height="0"
             sizes="100vw"
-            className="w-[28px] h-auto md:hidden"
+            className="w-[28px] h-auto lg:hidden"
           />
         </button>
       ) : (
@@ -27,7 +27,7 @@ const Menu = () => {
             width="0"
             height="0"
             sizes="100vw"
-            className="w-[28px] h-auto md:hidden "
+            className="w-[28px] h-auto lg:hidden "
           />
         </button>
       )}
