@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <main className="w-screen min-h-screen pt-16">
-      <section className="fade-in-text w-full h-[70vh] flex justify-center pt-20 px-4">
+      <section className="fade-in-text w-full h-[90vh] flex justify-center pt-20 px-4">
         <div className="flex flex-col items-center text-center">
           <p
             className={`text-4xl sm:text-5xl max-w-[700px] xl:text-7xl duration-300 ${montserrat.className} font-bold `}
