@@ -1,18 +1,18 @@
 import {
+  Cabin,
+  Flow_Circular,
   Inter,
+  Josefin_Sans,
+  Karla,
   Lusitana,
-  Signika_Negative,
-  Noto_Sans_Display,
-  Rubik,
-  Sanchez,
-  Rokkitt,
   Merriweather,
   Montserrat,
-  Karla,
-  Josefin_Sans,
-  Cabin,
+  Noto_Sans_Display,
   Roboto_Mono,
-  Flow_Circular,
+  Rokkitt,
+  Rubik,
+  Sanchez,
+  Signika_Negative,
 } from "next/font/google";
 
 export const inter = Inter({ subsets: ["latin"] });
