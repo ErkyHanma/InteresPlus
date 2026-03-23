@@ -98,7 +98,8 @@
 }
 
 .shadowClass {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
@@ -131,19 +132,18 @@
 }
 
 .bg2 {
-  background: rgb(236, 96, 10);
-  background: linear-gradient(
-    0deg,
-    rgba(236, 96, 10, 0.10550157563025209) 100%,
-    rgba(252, 252, 252, 0.1951374299719888) 93%
-  );
+  background: rgba(236, 96, 10, 0.10550157563025209);
 }
 
 .black-svg {
   filter: invert(100%) brightness(0);
 }
 
-.bgTransparent{
+.white-svg {
+  filter: invert(100%) brightness(100);
+}
+
+.bgTransparent {
   background-color: rgba(0, 0, 0, 0.483);
 }
 
@@ -301,7 +301,6 @@
 }
 
 .variablescompuesta p {
-
   color: #555;
   text-align: justify;
   font-size: 19px;
@@ -346,15 +345,11 @@
   font-size: 19px;
 }
 
-
-
-
-.ol strong{
+.ol strong {
   font-size: 1.125rem /* 18px */;
   line-height: 1.75rem /* 28px */;
 }
 
-
-.ol p{
+.ol p {
   margin-top: 20px;
 }

@@ -88,7 +88,7 @@ const about = () => {
         </div>
       </section>
 
-      <section className="h-full py-24 items-center justify-center px-8 md:px-16 lg:px-20 flex flex-col md:flex-row w-full ">
+      <section className="h-full pt-24 pb-36 items-center justify-center px-8 md:px-16 lg:px-20 flex flex-col md:flex-row w-full ">
         <div className=" flex-1 hidden lg:flex mr-8">
           <Image
             src={"/icon/undraw_my_personal_files_re_3q0p.svg"}
@@ -131,24 +131,6 @@ const about = () => {
               un recurso valioso para la educación financiera.
             </span>
           </p>
-        </div>
-      </section>
-
-      <section className="w-full px-8 my-24 md:my-36 flex items-center justify-center">
-        <div className="flex flex-col items-center text-center md:w-[950px] ">
-          <p
-            className={`text-3xl lg:text-6xl md:text-4xl  ${montserrat.className} font-bold`}
-          >
-            Creado por entusiastas de la tecnología, no lo dudes y únete a
-            nosotros.
-          </p>
-
-          <Link
-            className="font-bold mt-12 py-4 px-8 rounded-full text-xl  text-white bg-[#ec600a]"
-            href={"/calculadora"}
-          >
-            Empezar
-          </Link>
         </div>
       </section>
 

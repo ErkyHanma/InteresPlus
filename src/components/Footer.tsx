@@ -4,81 +4,103 @@ import Image from "next/image";
 import LogoBlack from "./LogoBlack";
 import Link from "next/link";
 import { karla, montserrat } from "@/lib/fonts";
-import { usePathname } from "next/navigation";
-import clsx from "clsx";
 
 const Footer = () => {
-  const pathname = usePathname();
-
   return (
-    <footer className="bg2 h-[400px]  flex flex-col w-full ">
-      <div
-        className={clsx(
-          "flex flex-col md:flex-row  ml-5 mr-7 px-2 md:px-4 lg:px-6 pt-16 gap-32 ",
-          {
-            "border-t  border-gray-400": pathname === "/home",
-          },
-        )}
-      >
-        <div className="flex w-full md:w-80 mr-28 flex-col  gap-5">
-          <Link href={"/home"} className="flex items-center -mt-2">
-            <LogoBlack />
-          </Link>
-          <p className={`font-semibold text-xl ${karla.className}`}>
-            Estamos aqui para facilitarte tu investigacion
-          </p>
+    <footer className="w-full bg-[#ec600a]">
+      <div className="max-w-6xl mx-auto px-6 lg:px-10 pt-16 pb-10">
+        <div className="flex flex-col md:flex-row gap-12 md:gap-20 pb-12 border-b border-white/10">
+          <div className="flex flex-col gap-4 md:w-72 shrink-0">
+            <Link href="/home" className="flex items-center">
+              <LogoBlack />
+            </Link>
+            <p
+              className={`text-white/60 text-sm leading-relaxed ${karla.className}`}
+            >
+              Estamos aquí para facilitarte tu investigación financiera. Simple,
+              rápido y confiable.
+            </p>
+            <div className="flex gap-4 mt-2">
+              <Link
+                href="https://github.com/ErkyHanma"
+                className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#ec600a] transition-colors duration-200 flex items-center justify-center"
+              >
+                <Image
+                  src="/icon/github.svg"
+                  alt="GitHub"
+                  width={16}
+                  height={16}
+                />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/yenzel-báez-610251291"
+                className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#ec600a] transition-colors duration-200 flex items-center justify-center"
+              >
+                <Image
+                  src="/icon/linkedin.svg"
+                  alt="LinkedIn"
+                  width={16}
+                  height={16}
+                  className=""
+                />
+              </Link>
+            </div>
+          </div>
+
+          <div
+            className={`flex flex-wrap gap-10 xl:gap-20 w-full md:justify-end ${karla.className}`}
+          >
+            <div className="flex flex-col gap-3">
+              <p className="text-white font-bold text-sm uppercase tracking-widest mb-1">
+                Servicios
+              </p>
+              <Link
+                className="text-white/60 hover:text-white text-sm transition-colors"
+                href="/calculadora"
+              >
+                Calculadora
+              </Link>
+            </div>
+
+            <div className="flex flex-col gap-3">
+              <p className="text-white font-bold text-sm uppercase tracking-widest mb-1">
+                Nosotros
+              </p>
+              <Link
+                className="text-white/60 hover:text-white text-sm transition-colors"
+                href="/about"
+              >
+                About us
+              </Link>
+              <Link
+                className="text-white/60 hover:text-white text-sm transition-colors"
+                href="/contact"
+              >
+                Contáctanos
+              </Link>
+            </div>
+
+            <div className="flex flex-col gap-3">
+              <p className="text-white font-bold text-sm uppercase tracking-widest mb-1">
+                Más
+              </p>
+              <Link
+                className="text-white/60 hover:text-white text-sm transition-colors"
+                href="/info"
+              >
+                Aprende
+              </Link>
+            </div>
+          </div>
         </div>
 
-        <div className="flex gap-5 md:gap-10 xl:gap-28 w-full lg:justify-end">
-          <div className={` flex flex-col ${karla.className} `}>
-            <p className={`font-bold mb-6 text-black text-xl `}>Servicios</p>
-            <Link className="font-medium text-gray-600" href={"/calculadora"}>
-              Calculadora
-            </Link>
-          </div>
-
-          <div className={` flex   flex-col ${karla.className} `}>
-            <p className={`font-bold mb-6 text-black text-xl `}>
-              Quienes somos
-            </p>
-            <Link className="font-medium text-gray-600" href={"/about"}>
-              About us
-            </Link>
-            <Link className="font-medium text-gray-600" href={"/contact"}>
-              Contactanos
-            </Link>
-          </div>
-
-          <div className={` flex   flex-col ${karla.className} `}>
-            <p className={`font-bold mb-6 text-black text-xl `}>Mas</p>
-            <Link className="font-medium text-gray-600" href={"/info"}>
-              Aprende
-            </Link>
-          </div>
-
-          <div className="flex flex-col gap-3">
-            <Link href={"https://github.com/ErkyHanma"}>
-              <Image
-                src={"/icon/github.svg"}
-                alt="icon"
-                width="0"
-                height="0"
-                sizes="100vw"
-                className="min-w-[24px] h-auto "
-              />
-            </Link>
-
-            <Link href={"www.linkedin.com/in/yenzel-báez-610251291"}>
-              <Image
-                src={"/icon/linkedin.svg"}
-                alt="icon"
-                width="0"
-                height="0"
-                sizes="100vw"
-                className="min-w-[24px] h-auto "
-              />
-            </Link>
-          </div>
+        <div
+          className={`flex flex-col sm:flex-row justify-between items-center gap-3 pt-6 ${karla.className}`}
+        >
+          <p className="text-white/30 text-xs">
+            © {new Date().getFullYear()} InteresPlus. Todos los derechos
+            reservados.
+          </p>
         </div>
       </div>
     </footer>

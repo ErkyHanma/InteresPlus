@@ -40,7 +40,7 @@ const ChartResult = ({
         </div>
 
         <p className="font-bold flex text-2xl md:text-xl rounded-b-md w-full h-[70px] bg-[#006eab] items-center justify-center">
-          {numberWithCommas(safeDepositoInicial)}
+          $ {numberWithCommas(safeDepositoInicial)}
         </p>
       </div>
 

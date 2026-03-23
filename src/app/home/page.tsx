@@ -2,13 +2,13 @@ import HomeInfo from "@/components/ui/HomeInfo";
 import { karla, montserrat, rubik } from "@/lib/fonts";
 import { homeInfo } from "@/constants";
 import Link from "next/link";
-import LogoBlack from "@/components/LogoBlack";
 import Image from "next/image";
 import Footer from "@/components/Footer";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export default function Home() {
   return (
-    <main className="w-screen min-h-screen pt-16">
+    <main className="w-full min-h-screen pt-16">
       <section className="fade-in-text items-center w-full flex justify-center pt-20 px-4 mb-32">
         <div className="flex flex-col items-center text-center">
           <p
@@ -40,9 +40,7 @@ export default function Home() {
         </div>
       </section>
 
-
-
-      <section className="gap-20 min-h-[520px] flex flex-col items-center py-8 px-5 md:px-24">
+      <section className="gap-20 min-h-[520px] bg-[#dcdcdc] flex flex-col items-center py-24 px-5 md:px-24">
         <p
           className={`font-semibold text-center  w-full text-3xl md:text-4xl ${karla.className}`}
         >
@@ -63,26 +61,24 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg flex items-center px-8 mt-12 h-full justify-center w-full">
-        <div className="flex flex-col items-center text-center pt-48 pb-24 md:w-[950px]">
+      <section className=" flex items-center px-8 py-48 h-full justify-center w-full">
+        <div className="flex flex-col items-center text-center  md:w-[950px]">
           <p
             className={`text-4xl md:text-5xl xl:text-6xl duration-300  ${montserrat.className} font-bold`}
           >
-            No lo pienses mas, prueba nuestra herramienta y comienza a mejorar
-            en tus inversiones
+            Empieza a mejorar tus inversiones hoy
           </p>
           <p
             className={` text-gray-500 text-lg md:w-[650px]  md:text-xl font-medium mt-6 md:mt-5  ${karla.className}`}
           >
-            La herramienta perfecta para calcular y visualizar tu inversiones.
-            Probada y certificada por expertos.
+            Calcula y visualiza tus inversiones de forma simple y rápida.
           </p>
 
           <Link
-            className="font-bold mt-12 py-4 px-8 rounded-full text-xl  text-white bg-[#ec600a]"
+            className="font-bold mt-12 hover:scale-105 duration-200 py-4 px-8 rounded-full text-xl  text-white bg-[#ec600a]"
             href={"/calculadora"}
           >
-            Empezar
+            <ArrowRight />
           </Link>
         </div>
       </section>
