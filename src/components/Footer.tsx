@@ -4,6 +4,7 @@ import Image from "next/image";
 import LogoBlack from "./LogoBlack";
 import Link from "next/link";
 import { karla, montserrat } from "@/lib/fonts";
+import LogoWhite from "./LogoWhite";
 
 const Footer = () => {
   return (
@@ -12,7 +13,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row gap-12 md:gap-20 pb-12 border-b border-white/10">
           <div className="flex flex-col gap-4 md:w-72 shrink-0">
             <Link href="/home" className="flex items-center">
-              <LogoBlack />
+              <LogoWhite />
             </Link>
             <p
               className={`text-white/60 text-sm leading-relaxed ${karla.className}`}

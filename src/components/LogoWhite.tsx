@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { rubik } from "../lib/fonts";
 
-const LogoBlack = () => {
+const LogoWhite = () => {
   return (
     <div className="flex items-baseline gap-1">
       <Image
@@ -22,4 +22,4 @@ const LogoBlack = () => {
   );
 };
 
-export default LogoBlack;
+export default LogoWhite;
