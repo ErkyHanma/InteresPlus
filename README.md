@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📈 Interes-Plus
 
-## Getting Started
+**Interactive Interest Calculator built with Next.js & TypeScript**
 
-First, run the development server:
+Interes-Plus is a modern financial tool for calculating and visualizing **simple and compound interest growth** with interactive charts and intuitive controls.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000/home](http://localhost:3000/home) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 💻 Technologies
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The project is built using modern tools and libraries:
 
-## Learn More
+- **Next.js 14** – App Router & server-side rendering  
+- **TypeScript** – Type safety throughout  
+- **Tailwind CSS + Radix UI** – Utility-first styles & accessible components  
+- **Chart.js & react-chartjs-2** – Dynamic financial visualizations  
+- **React Hook Form + Zod** – Scalable form validation  
+- **Luxon** – Date and time utilities  
 
-To learn more about Next.js, take a look at the following resources:
+This stack ensures strong practices and a solid developer experience.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🚀 Features
 
-## Deploy on Vercel
+✔️ Simple & compound interest calculation  
+✔️ Real-time visual charts  
+✔️ Responsive UI  
+✔️ Form validation and dynamic feedback  
+✔️ Clear distinction between capital, contributions, and interest  
+✔️ Supports multiple compounding frequencies  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🧪 Getting Started
+
+### Requirements
+
+- Node.js (v18+ recommended)
+- npm or yarn
+
+
+## 🚦 Running the Project
+
+1. Clone the repository
+2. Move to directory `cd interes-plus`
+3. Install dependencies: `npm install`
+4. Run development server: `npm run dev`
+5. Open `http://localhost:3000` in your browser
+
+
+---
+## 🎞️ Preview
+![Untitled video - Made with Clipchamp](https://github.com/user-attachments/assets/db3ca143-d097-45d7-addd-0ac1e517cd53)
