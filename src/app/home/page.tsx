@@ -64,7 +64,7 @@ export default function Home() {
       </section>
 
       <section className="bg flex items-center px-8 mt-12 h-full justify-center w-full">
-        <div className="flex flex-col items-center text-center py-20 md:w-[950px]">
+        <div className="flex flex-col items-center text-center pt-48 pb-24 md:w-[950px]">
           <p
             className={`text-4xl md:text-5xl xl:text-6xl duration-300  ${montserrat.className} font-bold`}
           >

@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
 import LogoBlack from "./LogoBlack";
 import Link from "next/link";
 import { karla, montserrat } from "@/lib/fonts";
@@ -12,10 +11,10 @@ const Footer = () => {
   const pathname = usePathname();
 
   return (
-    <footer className="bg2  h-[480px]  flex flex-col w-full ">
+    <footer className="bg2 h-[400px]  flex flex-col w-full ">
       <div
         className={clsx(
-          "flex flex-col md:flex-row h-[260px] ml-5 mr-7 px-2 md:px-4 lg:px-6 pt-16 gap-32 ",
+          "flex flex-col md:flex-row  ml-5 mr-7 px-2 md:px-4 lg:px-6 pt-16 gap-32 ",
           {
             "border-t  border-gray-400": pathname === "/home",
           },
@@ -79,8 +78,6 @@ const Footer = () => {
                 className="min-w-[24px] h-auto "
               />
             </Link>
-
-            
           </div>
         </div>
       </div>
