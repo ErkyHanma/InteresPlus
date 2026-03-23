@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <main className="w-screen min-h-screen pt-16">
-      <section className="fade-in-text items-center w-full h-[90vh] md:h-[60vh] flex justify-center pt-20 px-4">
+      <section className="fade-in-text items-center w-full flex justify-center pt-20 px-4 mb-32">
         <div className="flex flex-col items-center text-center">
           <p
             className={`text-4xl sm:text-5xl max-w-[700px] xl:text-7xl duration-300 ${montserrat.className} font-bold `}
@@ -29,20 +29,18 @@ export default function Home() {
           >
             Empezar
           </Link>
+
+          <Image
+            src={"/icon/undraw_small_town_re_7mcn.svg"}
+            alt="icon"
+            width="1000"
+            height="1000"
+            className="w-full max-w-[1000px] h-auto pt-12"
+          />
         </div>
       </section>
 
-      <section
-        className={` px-8 lg:pl-16 my-32 hidden md:flex mb-16  items-center justify-center`}
-      >
-        <Image
-          src={"/icon/undraw_small_town_re_7mcn.svg"}
-          alt="icon"
-          width="1000"
-          height="1000"
-          className="w-full max-w-[1000px] h-auto"
-        />
-      </section>
+
 
       <section className="gap-20 min-h-[520px] flex flex-col items-center py-8 px-5 md:px-24">
         <p

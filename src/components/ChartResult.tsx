@@ -39,7 +39,7 @@ const ChartResult = ({
           />
         </div>
 
-        <p className="font-bold flex text-2xl rounded-b-md w-full h-[70px] bg-[#006eab] items-center justify-center">
+        <p className="font-bold flex text-2xl md:text-xl rounded-b-md w-full h-[70px] bg-[#006eab] items-center justify-center">
           {numberWithCommas(safeDepositoInicial)}
         </p>
       </div>
@@ -59,7 +59,7 @@ const ChartResult = ({
           />
         </div>
 
-        <p className="font-bold flex rounded-b-md text-2xl rounded-md w-full h-[70px] bg-[#05B4FF] items-center justify-center">
+        <p className="font-bold flex rounded-b-md md:text-xl text-2xl rounded-md w-full h-[70px] bg-[#05B4FF] items-center justify-center">
           $ {numberWithCommas((aportacionesTotales * AñosAInvertir).toFixed(2))}
         </p>
       </div>
@@ -77,7 +77,7 @@ const ChartResult = ({
           />
         </div>
 
-        <p className="font-bold flex rounded-b-md text-2xl w-full h-[70px] bg-[#75d7ff] items-center justify-center">
+        <p className="font-bold flex rounded-b-md md:text-xl text-2xl w-full h-[70px] bg-[#75d7ff] items-center justify-center">
           $ {numberWithCommas(safeInteresFinal)}
         </p>
       </div>
@@ -95,7 +95,7 @@ const ChartResult = ({
           />
         </div>
 
-        <p className="font-bold flex  rounded-b-md text-2xl w-full h-[70px] bg-green-300 items-center justify-center">
+        <p className="font-bold flex  rounded-b-md md:text-xl text-2xl w-full h-[70px] bg-green-300 items-center justify-center">
           $ {numberWithCommas(safeCapitalFinal)}
         </p>
       </div>

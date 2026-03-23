@@ -18,7 +18,7 @@ const Footer = () => {
           "flex flex-col md:flex-row h-[260px] ml-5 mr-7 px-2 md:px-4 lg:px-6 pt-16 gap-32 ",
           {
             "border-t  border-gray-400": pathname === "/home",
-          }
+          },
         )}
       >
         <div className="flex w-full md:w-80 mr-28 flex-col  gap-5">
@@ -69,7 +69,7 @@ const Footer = () => {
               />
             </Link>
 
-            <Link href={""}>
+            <Link href={"www.linkedin.com/in/yenzel-báez-610251291"}>
               <Image
                 src={"/icon/linkedin.svg"}
                 alt="icon"
@@ -80,27 +80,7 @@ const Footer = () => {
               />
             </Link>
 
-            <Link href={""}>
-              <Image
-                src={"/icon/instagram.svg"}
-                alt="icon"
-                width="0"
-                height="0"
-                sizes="100vw"
-                className="min-w-[24px]  h-auto "
-              />
-            </Link>
-
-            <Link href={""}>
-              <Image
-                src={"/icon/twitter-alt-square.svg"}
-                alt="icon"
-                width="0"
-                height="0"
-                sizes="100vw"
-                className="min-w-[24px] h-auto "
-              />
-            </Link>
+            
           </div>
         </div>
       </div>
