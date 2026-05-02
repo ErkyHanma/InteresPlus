@@ -1,5 +1,5 @@
 import Footer from "@/components/Footer";
-import { karla, montserrat } from "@/lib/fonts";
+import { montserrat } from "@/lib/fonts";
 import Image from "next/image";
 import Link from "next/link";
 
