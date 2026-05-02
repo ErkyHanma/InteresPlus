@@ -6,17 +6,17 @@ import Link from "next/link";
 const Info = () => {
   return (
     <div
-      className={`w-full   flex flex-col items-center justify-center  ${montserrat.className}`}
+      className={`flex w-full flex-col items-center justify-center ${montserrat.className}`}
     >
       <Image
-        src={"/fs-banner.jpg"}
+        src={"/images/1972-old-finance-coin-i541nsqrt8xt3ijg.webp"}
         alt="Info page Image"
         width="0"
         height="0"
         sizes="100vw"
-        className="w-full self-center mb-28 h-auto "
+        className="mb-16 h-auto w-full self-center object-cover md:max-h-[400px]"
       />
-      <div className=" w-full px-12 mb-16 md:w-[80%] lg:w-[55%]">
+      <div className="mb-16 w-full px-12 md:w-[80%] lg:w-[55%]">
         <div className="EducacionFinanciera">
           <h2> ¿Qué es la Educación Financiera? </h2>
           <p>
@@ -95,9 +95,9 @@ const Info = () => {
             width="0"
             height="0"
             sizes="100vw"
-            className="w-[400px] self-center mb-28 h-auto "
+            className="h-auto w-[400px] self-center"
             alt=""
-            src="/undraw_growth_chart_r99m.svg"
+            src="/icon/undraw_growth_chart_r99m.svg"
           />
         </div>
 
@@ -140,8 +140,8 @@ const Info = () => {
             width="0"
             height="0"
             sizes="100vw"
-            className="w-[500px] py-6 h-auto "
-            src="/Screenshot 2024-07-30 223738.png"
+            className="h-auto w-[500px] py-6"
+            src="/images/Screenshot 2024-07-30 223738.png"
             alt="imagen interes simple"
           />
         </div>
@@ -184,7 +184,7 @@ const Info = () => {
             interés simple del 4% anual durante 3 años.
           </p>
 
-          <ul className="flex text-lg mb-6 text-[#555] flex-col gap-4 list-disc pl-6">
+          <ul className="mb-6 flex list-disc flex-col gap-4 pl-6 text-lg text-[#555]">
             <li>
               <strong className="text-black">Capital (c)</strong>: $1,000
             </li>
@@ -258,8 +258,8 @@ const Info = () => {
             width="0"
             height="0"
             sizes="100vw"
-            className="w-[400px] h-auto "
-            src="/Images/formula-interes-compuesto.png"
+            className="h-auto w-[400px]"
+            src="/images/formula-interes-compuesto.png"
             alt="imagen interes compuesto"
           />
         </div>
@@ -324,13 +324,13 @@ const Info = () => {
               Adicionales:{" "}
             </p>
 
-            <div className=" -ml-6 imagencompuesta">
+            <div className="imagencompuesta -ml-6">
               <Image
                 width="0"
                 height="0"
                 sizes="100vw"
-                className="w-[440px] h-auto "
-                src="/Images/Screenshot 2024-08-08 174106.png"
+                className="h-auto w-[440px]"
+                src="/images/Screenshot 2024-08-08 174106.png"
                 alt="imagen interes compuesto"
               />
             </div>
@@ -378,7 +378,7 @@ const Info = () => {
             </p>
           </div>
 
-          <h2 className="font-semibold text-[22px] mt-20 mb-8">
+          <h2 className="mb-8 mt-20 text-[22px] font-semibold">
             ¿Para Qué Se Usa Esta Fórmula?
           </h2>
           <p className="mb-6">
@@ -386,7 +386,7 @@ const Info = () => {
             para:
           </p>
 
-          <ul className="flex text-xl text-[19px] text-[#555] flex-col gap-6 mb-20  ">
+          <ul className="mb-20 flex flex-col gap-6 text-[19px] text-xl text-[#555]">
             <li>
               <strong className="text-black">
                 Ahorrar para Metas Específicas:
@@ -420,7 +420,7 @@ const Info = () => {
             </li>
           </ul>
 
-          <h2 className="font-semibold text-[22px] my-8">Ejemplo Práctico</h2>
+          <h2 className="my-8 text-[22px] font-semibold">Ejemplo Práctico</h2>
           <p>
             Supongamos que decides ahorrar para un objetivo financiero a 10 años
             y planeas hacer aportaciones mensuales de $100. Sabes que la tasa de
@@ -430,10 +430,10 @@ const Info = () => {
             años.
           </p>
 
-          <h3 className="font-semibold text-[22px] mt-20 mb-8">
+          <h3 className="mb-8 mt-20 text-[22px] font-semibold">
             Datos del Ejemplo:
           </h3>
-          <ul className="flex text-xl text-[18px]  text-black flex-col gap-6 mb-20 list-disc pl-6">
+          <ul className="mb-20 flex list-disc flex-col gap-6 pl-6 text-[18px] text-xl text-black">
             <li>
               <strong className="text-black">Aportación mensual (CI):</strong>{" "}
               $100
@@ -453,8 +453,8 @@ const Info = () => {
             </li>
           </ul>
 
-          <h3 className="font-semibold text-[20px] my-8">Pasos del Cálculo:</h3>
-          <ol className="ol flex gap-12 flex-col">
+          <h3 className="my-8 text-[20px] font-semibold">Pasos del Cálculo:</h3>
+          <ol className="ol flex flex-col gap-12">
             <li>
               <strong>1. Calcular la tasa de interés por período:</strong>
               <p>
@@ -462,7 +462,7 @@ const Info = () => {
                 número de períodos de capitalización en un año. Esto te dará la
                 tasa de interés aplicable a cada período.
               </p>
-              <p className="font-semibold -mt-12">
+              <p className="-mt-12 font-semibold">
                 Ejemplo: <code>r/n = 0.05 / 12 ≈ 0.004167</code>
               </p>
               <p>
@@ -577,8 +577,8 @@ const Info = () => {
 
           <div className="flex flex-col gap-16">
             <div>
-              <h2 className="text-2xl mb-4 font-semibold">Interés simple</h2>
-              <ul className="flex text-xl text-[#555] flex-col gap-4 list-disc pl-6">
+              <h2 className="mb-4 text-2xl font-semibold">Interés simple</h2>
+              <ul className="flex list-disc flex-col gap-4 pl-6 text-xl text-[#555]">
                 <li>
                   Al iniciar un nuevo período de inversión o crédito este
                   interés se mantiene igual.
@@ -595,8 +595,8 @@ const Info = () => {
             </div>
 
             <div>
-              <h2 className="text-2xl mb-4 font-semibold">Interés compuesto</h2>
-              <ul className="flex text-xl text-[#555] flex-col gap-4 list-disc pl-6">
+              <h2 className="mb-4 text-2xl font-semibold">Interés compuesto</h2>
+              <ul className="flex list-disc flex-col gap-4 pl-6 text-xl text-[#555]">
                 <li>
                   Genera sobre el capital al cumplirse el plazo establecido en
                   la inversión o préstamo.
