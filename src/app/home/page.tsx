@@ -8,23 +8,23 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export default function Home() {
   return (
-    <main className="w-full min-h-screen pt-16">
-      <section className="fade-in-text items-center w-full flex justify-center pt-20 px-4 mb-32">
+    <main className="min-h-screen w-full pt-16">
+      <section className="fade-in-text mb-32 flex w-full items-center justify-center px-4 pt-20">
         <div className="flex flex-col items-center text-center">
           <p
-            className={`text-4xl sm:text-5xl max-w-[700px] xl:text-7xl duration-300 ${montserrat.className} font-bold `}
+            className={`max-w-[700px] text-4xl duration-300 sm:text-5xl xl:text-7xl ${montserrat.className} font-bold`}
           >
             Calcula y visualiza tus inversiones
           </p>
           <p
-            className={` text-gray-500 max-w-[450px]  duration-300 text-base  md:text-lg  xl:w-[600px]  xl:text-xl font-medium mt-6 md:mt-5  ${karla.className}`}
+            className={`mt-6 max-w-[450px] text-base font-medium text-gray-500 duration-300 md:mt-5 md:text-lg xl:w-[600px] xl:text-xl ${karla.className}`}
           >
             Tu herramienta definitiva para planificar y visualizar el
             crecimiento de tus inversiones.
           </p>
 
           <Link
-            className="font-bold mt-12 py-4 px-8 rounded-full text-base md:text-xl  text-white bg-[#ec600a]"
+            className="mt-12 rounded-full bg-[#ec600a] px-8 py-4 text-base font-bold text-white md:text-xl"
             href={"/calculadora"}
           >
             Empezar
@@ -35,19 +35,19 @@ export default function Home() {
             alt="icon"
             width="1000"
             height="1000"
-            className="w-full max-w-[1000px] h-auto pt-12"
+            className="h-auto w-full max-w-[1000px] pt-12"
           />
         </div>
       </section>
 
-      <section className="gap-20 min-h-[520px] bg-[#dcdcdc] flex flex-col items-center py-24 px-5 md:px-24">
+      <section className="flex min-h-[520px] flex-col items-center gap-20 bg-[#dcdcdc] px-5 py-24 md:px-24">
         <p
-          className={`font-semibold text-center  w-full text-3xl md:text-4xl ${karla.className}`}
+          className={`w-full text-center text-3xl font-semibold md:text-4xl ${karla.className}`}
         >
           Estamos aqui para facilitarte tu investigacion
         </p>
-        <div className="flex ">
-          <div className="flex md:flex-row flex-col gap-12">
+        <div className="flex">
+          <div className="flex flex-col gap-12 md:flex-row">
             {homeInfo.map((item) => (
               <HomeInfo
                 key={item.titulo}
@@ -61,21 +61,21 @@ export default function Home() {
         </div>
       </section>
 
-      <section className=" flex items-center px-8 py-48 h-full justify-center w-full">
-        <div className="flex flex-col items-center text-center  md:w-[950px]">
+      <section className="flex h-full w-full items-center justify-center px-8 py-48">
+        <div className="flex flex-col items-center text-center md:w-[950px]">
           <p
-            className={`text-4xl md:text-5xl xl:text-6xl duration-300  ${montserrat.className} font-bold`}
+            className={`text-4xl duration-300 md:text-5xl xl:text-6xl ${montserrat.className} font-bold`}
           >
             Empieza a mejorar tus inversiones hoy
           </p>
           <p
-            className={` text-gray-500 text-lg md:w-[650px]  md:text-xl font-medium mt-6 md:mt-5  ${karla.className}`}
+            className={`mt-6 text-lg font-medium text-gray-500 md:mt-5 md:w-[650px] md:text-xl ${karla.className}`}
           >
             Calcula y visualiza tus inversiones de forma simple y rápida.
           </p>
 
           <Link
-            className="font-bold mt-12 hover:scale-105 duration-200 py-4 px-8 rounded-full text-xl  text-white bg-[#ec600a]"
+            className="mt-12 rounded-full bg-[#ec600a] px-8 py-4 text-xl font-bold text-white duration-200 hover:scale-105"
             href={"/calculadora"}
           >
             <ArrowRight />

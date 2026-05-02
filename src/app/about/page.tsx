@@ -7,12 +7,12 @@ import Link from "next/link";
 
 const about = () => {
   return (
-    <div className="flex text-black pt-14 flex-col">
+    <div className="flex flex-col pt-14 text-black">
       <section
-        className={`${montserrat.className} pt-12 sm:pt-0  flex flex-col md:flex-row  gap-3 px-8 md:px-12 xl:px-36 justify-center min-h-screen md:items-center`}
+        className={`${montserrat.className} flex min-h-screen flex-col justify-center gap-3 px-8 pt-12 sm:pt-0 md:flex-row md:items-center md:px-12 xl:px-36`}
       >
-        <div className="flex flex-col w-full gap-6">
-          <p className="font-bold text-3xl md:text-4xl lg:text-5xl w-full">
+        <div className="flex w-full flex-col gap-6">
+          <p className="w-full text-3xl font-bold md:text-4xl lg:text-5xl">
             Cambiando la forma en la que visualizas tus inversiones
           </p>
           <div
@@ -20,7 +20,7 @@ const about = () => {
           >
             ........... .....
           </div>
-          <p className="text-md -mt-4  w-full font-medium">
+          <p className="text-md -mt-4 w-full font-medium">
             Fundada con la idea de crear una herramienta sencilla para la
             visualización y cálculo de inversiones, Interes-Plus ofrece
             tecnología que reduce errores humanos y proporciona resultados
@@ -28,29 +28,28 @@ const about = () => {
             comprender mejor las inversiones a lo largo del tiempo.
           </p>
         </div>
-        <div className="md:ml-20 my-10 justify-center md:w-full flex">
+        <div className="my-10 flex justify-center md:ml-20 md:w-full">
           <Image
             src={"/icon/undraw_data_re_80ws (1).svg"}
             alt="icon"
             width="0"
             height="0"
             sizes="100vw"
-            className="md:w-full w-[340px]  h-auto"
+            className="h-auto w-[340px] md:w-full"
           />
         </div>
       </section>
 
       <section
-        className={` ${montserrat.className} pb-24  bg-gray-200 min-h-[35rem] pt-20 gap-12 md:gap-24 px-8  md:px-20 lg:px-36  
-      >  flex flex-col`}
+        className={` ${montserrat.className} > flex min-h-[35rem] flex-col gap-12 bg-gray-200 px-8 pb-24 pt-20 md:gap-24 md:px-20 lg:px-36`}
       >
-        <div className="h-80 flex-1 border-b pb-20 border-gray-500 justify-between gap-12 md:gap-20 flex flex-col md:flex-row">
-          <p className="text-4xl flex-1 text-center md:text-start font-bold">
+        <div className="flex h-80 flex-1 flex-col justify-between gap-12 border-b border-gray-500 pb-20 md:flex-row md:gap-20">
+          <p className="flex-1 text-center text-4xl font-bold md:text-start">
             Diseñado con pasión <br></br>
             para tus finanzas
           </p>
 
-          <div className="flex flex-col flex-1 gap-6 font-semibold text-sm text-gray-500">
+          <div className="flex flex-1 flex-col gap-6 text-sm font-semibold text-gray-500">
             <p>
               Creemos en el poder de las herramientas financieras para fomentar
               conexiones educativas y capacitar a los profesionales financieros
@@ -69,18 +68,18 @@ const about = () => {
           </div>
         </div>
 
-        <div className="md:grid md:grid-cols-3 flex flex-col gap-6">
+        <div className="flex flex-col gap-6 md:grid md:grid-cols-3">
           {aboutInfo.map((item) => (
-            <div key={item.title} className="gap-3 flex flex-col">
+            <div key={item.title} className="flex flex-col gap-3">
               <p
-                className={`  ${karla.className}   font-semibold text-2xl lg:text-3xl`}
+                className={` ${karla.className} text-2xl font-semibold lg:text-3xl`}
               >
                 {item.title}
               </p>
 
-              <span className="w-16 ml-2 h-[2px] -mt-1 bg-orange-500"></span>
+              <span className="-mt-1 ml-2 h-[2px] w-16 bg-orange-500"></span>
 
-              <p className="text-gray-600 text-sm lg:text-base font-medium">
+              <p className="text-sm font-medium text-gray-600 lg:text-base">
                 {item.info}
               </p>
             </div>
@@ -88,20 +87,20 @@ const about = () => {
         </div>
       </section>
 
-      <section className="h-full pt-24 pb-36 items-center justify-center px-8 md:px-16 lg:px-20 flex flex-col md:flex-row w-full ">
-        <div className=" flex-1 hidden lg:flex mr-8">
+      <section className="flex h-full w-full flex-col items-center justify-center px-8 pb-36 pt-24 md:flex-row md:px-16 lg:px-20">
+        <div className="mr-8 hidden flex-1 lg:flex">
           <Image
             src={"/icon/undraw_my_personal_files_re_3q0p.svg"}
             alt="icon"
             width="0"
             height="0"
             sizes="100vw"
-            className="w-[500px] h-auto"
+            className="h-auto w-[500px]"
           />
         </div>
-        <div className={`${montserrat.className} flex flex-col flex-1 gap-8`}>
-          <p className="font-bold  text-4xl">Nuestra Historia</p>
-          <p className="md:gap-2 gap-4 text-sm lg:text-base flex flex-col">
+        <div className={`${montserrat.className} flex flex-1 flex-col gap-8`}>
+          <p className="text-4xl font-bold">Nuestra Historia</p>
+          <p className="flex flex-col gap-4 text-sm md:gap-2 lg:text-base">
             <span>
               Este proyecto fue creado como parte de un proyecto universitario
               en la materia de Precálculo, encargado por el Lcdo. Luis David

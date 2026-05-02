@@ -51,9 +51,9 @@ const Contact = () => {
   });
 
   return (
-    <section className="flex px-8 items-center md:justify-center h-screen gap-16">
-      <div className="flex flex-col w-full max-w-[600px]">
-        <p className="font-bold text-4xl xl:text-5xl">Message Us</p>
+    <section className="flex h-screen items-center gap-16 px-8 md:justify-center">
+      <div className="flex w-full max-w-[600px] flex-col">
+        <p className="text-4xl font-bold xl:text-5xl">Message Us</p>
         <div className={`${flow_Circular.className} pl-1 text-[#ec600a]`}>
           .....................
         </div>
@@ -61,7 +61,7 @@ const Contact = () => {
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
-            className="space-y-8 mt-2 pr-2 lg:pr-8"
+            className="mt-2 space-y-8 pr-2 lg:pr-8"
           >
             <FormField
               control={form.control}
@@ -105,7 +105,7 @@ const Contact = () => {
               )}
             />
             <Button
-              className="self-start text-md  text-white font-bold px-7 py-5 rounded-lg  bg-[#ec600a]"
+              className="text-md self-start rounded-lg bg-[#ec600a] px-7 py-5 font-bold text-white"
               type="submit"
             >
               Submit
@@ -114,11 +114,11 @@ const Contact = () => {
         </Form>
       </div>
 
-      <div className="hidden md:flex items-center justify-center">
+      <div className="hidden items-center justify-center md:flex">
         <Image
           width="400"
           height="400"
-          className="w-[400px] h-auto"
+          className="h-auto w-[400px]"
           src={"/icon/undraw_profile_details_re_ch9r.svg"}
           alt="Profile Details Ilustration"
         />

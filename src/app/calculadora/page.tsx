@@ -19,7 +19,7 @@ const Calculadora = () => {
   const [interestType, setInterestType] = useState("simple");
 
   const handleOnChange = (
-    event: ChangeEvent<HTMLInputElement | HTMLSelectElement>
+    event: ChangeEvent<HTMLInputElement | HTMLSelectElement>,
   ) => {
     const { value, name } = event.target;
     setFormData((pre) => {
@@ -31,20 +31,20 @@ const Calculadora = () => {
   };
 
   const handleInterestTypeChange = (
-    event: ReactMouseEvent<HTMLButtonElement>
+    event: ReactMouseEvent<HTMLButtonElement>,
   ) => {
     const { value } = event.currentTarget;
     setInterestType(value);
   };
 
   return (
-    <div className="flex-col min-h-screen pt-32 flex justify-center">
-      <section className="flex md:flex-row flex-col">
-        <div className="flex px-6 flex-col gap-10 xl:flex-row xl:gap-4 xl:mx-20 ">
-          <div className="border pt-3 -mt-4 px-4 flex flex-col h-[560px] shadow-md rounded-md">
-            <div className="flex gap-2 justify-between mb-4  rounded-md p-2">
+    <div className="flex min-h-screen flex-col justify-center pt-32">
+      <section className="flex flex-col md:flex-row">
+        <div className="flex flex-col gap-10 px-6 xl:mx-20 xl:flex-row xl:gap-4">
+          <div className="-mt-4 flex h-[560px] flex-col rounded-md border px-4 pt-3 shadow-md">
+            <div className="mb-4 flex justify-between gap-2 rounded-md p-2">
               <button
-                className={clsx("font-semibold  p-2 flex-1  rounded-md", {
+                className={clsx("flex-1 rounded-md p-2 font-semibold", {
                   "bg-orange-500 text-white": interestType === "simple",
                 })}
                 value={"simple"}
@@ -53,7 +53,7 @@ const Calculadora = () => {
                 Interes Simple
               </button>
               <button
-                className={clsx("font-semibold  p-2 flex-1 rounded-md", {
+                className={clsx("flex-1 rounded-md p-2 font-semibold", {
                   "bg-orange-500 text-white": interestType === "compuesto",
                 })}
                 value={"compuesto"}
@@ -63,7 +63,7 @@ const Calculadora = () => {
               </button>
             </div>
 
-            <form className="flex flex-col h-80 w-full xl:w-[340px]  mr-14 gap-2 mx-4">
+            <form className="mx-4 mr-14 flex h-80 w-full flex-col gap-2 xl:w-[340px]">
               <CompoundInterestForm
                 inputValues={inputValues}
                 formData={formData}
@@ -72,7 +72,7 @@ const Calculadora = () => {
             </form>
           </div>
 
-          <div className="w-full mb-32">
+          <div className="mb-32 w-full">
             <BarChart data={formData} interestType={interestType} />
           </div>
         </div>
